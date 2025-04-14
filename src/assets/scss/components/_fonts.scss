@@ -1,0 +1,8 @@
+@font-face {
+    font-family: SFProRoundedRegular;
+    src: font-url('../../fonts/SF-Pro-Rounded-Regular.ttf');
+    src: 
+      font-url('../../fonts/SF-Pro-Rounded-Regular.ttf') format('truetype')
+  }
+$primaryFont: SFProRoundedRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$secondaryFont: serif;

@@ -1,0 +1,103 @@
+@import '../scss/components/_variables.scss';
+@import '../scss/components/_fonts.scss';
+@import '../scss/components/_mixins.scss';
+@import '../scss/components/_buttons.scss';
+
+
+body {
+  background: #fefefe;
+  color: #0a0a0a;
+  font-family: $primaryFont;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.tab-tool {
+  background-color: #0a0a0a;
+  height: 100vh;
+
+  &__container {
+    width: 600px;
+    margin: auto;
+    padding: 100px 0;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 80px;
+    width: 80px;
+    animation: App-logo-spin infinite 20s linear;
+  }
+
+  &__heading {
+    margin: 0;
+    color: #48d9f3;
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: #48d9f3;
+  }
+
+  &__description {
+    margin-top: 20px;
+    &-header {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin-left: 8px;
+    }
+
+    &-item {
+      margin: 0 0 0 4px;
+      padding: 7px 8px;
+      color: #fff;
+      background-color: #282f33;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+
+      &:hover {
+        background-color: #48d9f3;
+        color: #000;
+      }
+    }
+
+    &-content {
+      padding: 20px;
+      margin: 0px 12px 12px;
+      background-color: #2d3942;
+    }
+  }
+
+  &__item {
+    margin: 10px 24px;
+    color: #fff;
+  }
+}
+
+.active {
+  background-color: #48d9f3;
+  color: #000;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
